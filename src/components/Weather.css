@@ -1,3 +1,4 @@
+/* weather.css */
 .weather{
   place-self: center; 
   padding: 40px;
@@ -7,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .search-bar{
@@ -31,10 +32,12 @@
 
 .search-bar img{
   width: 50px;
+  height: 50px;
   padding: 15px;
   border-radius: 50%;
   background: #ebfffc;
   cursor: pointer;
+  flex-shrink: 0;
 } 
 
 .weather-icon{
@@ -51,6 +54,8 @@
 .location{
   color: #fff;
   font-size: 40px;
+  text-align: center;
+  word-break: break-word;
 }
 
 .weather-data{
@@ -59,6 +64,7 @@
   color: #fff;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .weather-data .col{
@@ -66,6 +72,7 @@
   align-items: flex-start;
   gap: 12px;
   font-size: 22px;
+  flex: 1;
 }
 
 .weather-data .col span{
@@ -78,113 +85,130 @@
   margin-top: 10px;
 }
 
-/* Responsive Design - Tablet */
+/* Tablet Devices */
 @media (max-width: 768px) {
-  .weather {
-    padding: 35px;
-    max-width: 400px;
+  .weather{
+    padding: 35px 30px;
+    max-width: 450px;
   }
   
-  .temperature {
+  .temperature{
     font-size: 70px;
   }
   
-  .location {
-    font-size: 35px;
+  .location{
+    font-size: 36px;
   }
   
-  .weather-icon {
-    width: 130px;
+  .weather-data .col{
+    font-size: 20px;
+  }
+  
+  .weather-data .col span{
+    font-size: 14px;
   }
 }
 
-/* Responsive Design - Mobile */
+/* Mobile Devices */
 @media (max-width: 480px) {
-  .weather {
+  .weather{
     padding: 30px 20px;
     max-width: 100%;
     margin: 0 10px;
   }
   
-  .search-bar input {
-    font-size: 16px;
+  .search-bar input{
     height: 45px;
+    font-size: 16px;
     padding-left: 20px;
   }
   
-  .search-bar img {
+  .search-bar img{
     width: 45px;
+    height: 45px;
     padding: 12px;
   }
   
-  .weather-icon {
+  .weather-icon{
     width: 120px;
     margin: 25px 0;
   }
   
-  .temperature {
+  .temperature{
     font-size: 60px;
   }
   
-  .location {
-    font-size: 30px;
+  .location{
+    font-size: 28px;
   }
   
-  .weather-data {
+  .weather-data{
     margin-top: 30px;
     gap: 15px;
   }
   
-  .weather-data .col {
+  .weather-data .col{
     font-size: 18px;
-    gap: 10px;
+    gap: 8px;
   }
   
-  .weather-data .col span {
-    font-size: 14px;
+  .weather-data .col span{
+    font-size: 13px;
   }
   
-  .weather-data .col img {
+  .weather-data .col img{
     width: 24px;
     margin-top: 8px;
   }
 }
 
-/* Responsive Design - Small Mobile */
+/* Small Mobile Devices */
 @media (max-width: 360px) {
-  .weather {
+  .weather{
     padding: 25px 15px;
   }
   
-  .search-bar input {
-    font-size: 14px;
+  .search-bar input{
     height: 40px;
-    padding-left: 18px;
+    font-size: 14px;
+    padding-left: 15px;
   }
   
-  .search-bar img {
+  .search-bar img{
     width: 40px;
+    height: 40px;
     padding: 10px;
   }
   
-  .weather-icon {
+  .weather-icon{
     width: 100px;
     margin: 20px 0;
   }
   
-  .temperature {
+  .temperature{
     font-size: 50px;
   }
   
-  .location {
-    font-size: 26px;
+  .location{
+    font-size: 24px;
   }
   
-  .weather-data .col {
+  .weather-data{
+    margin-top: 25px;
+    gap: 10px;
+  }
+  
+  .weather-data .col{
     font-size: 16px;
+    gap: 6px;
   }
   
-  .weather-data .col img {
+  .weather-data .col span{
+    font-size: 12px;
+  }
+  
+  .weather-data .col img{
     width: 22px;
+    margin-top: 6px;
   }
 }
