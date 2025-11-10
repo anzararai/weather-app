@@ -9,7 +9,7 @@ A simple weather app built using **React.js** that fetches real-time weather dat
 
 ## 🛠️ Tech Stack
 - React.js  
-- Vanilla CSS  
+- Responsive design  
 - OpenWeatherMap API  
 
 ## ⚙️ Installation & Setup
